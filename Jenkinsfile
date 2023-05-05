@@ -9,7 +9,6 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'cp -v'
                 sh 'node -v'
             }
         }
