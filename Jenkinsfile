@@ -7,7 +7,7 @@ pipeline {
                 echo 'Clone..'
             }
         }
-        stage('Docker') {
+        stage('Build Docker') {
             steps {
                 withDockerRegistry(credentialsId: 'docker-hub', url: 'https://index.docker.io/v1/') {
                     sh 'docker ps'
